@@ -1,8 +1,8 @@
-<?php 
-  session_start();
+<?php
+session_start();
 
 
-date_default_timezone_set("Africa/Lagos");                  # set your time zone (optional)
+date_default_timezone_set("Africa/Lagos"); # set your time zone (optional)
  
 
 // 8 and 40 and 30  ini_set('session.gc_maxlifetime', 86400);                   # set how long (in secs, 86400=1day) you want you session to last, 
@@ -70,7 +70,7 @@ function cleanInput($input){
         //     $input = stripslashes($input);
         // }
         $input  = cleanInput($input);
-        $input = $GLOBALS['db']->real_escape_string($input);
+        // $input = $GLOBALS['db']->real_escape_string($input);
     }
 
     return $input;
