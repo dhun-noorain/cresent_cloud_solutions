@@ -41,123 +41,113 @@
   ======================================================== -->
    <script src="https://kit.fontawesome.com/8acb53ed91.js" crossorigin="anonymous"></script>
 
+<style type="text/css">
+  .partners {
+    text-align: center;
+    padding: 50px 0;
+  }
 
-   <style type="text/css">
+  .owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 
- .partners {
-  text-align: center;
-  padding: 50px 0;
-}
+  .partner {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
 
+  .partner img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
 
-.owl-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
+  .partner:hover {
+    transform: scale(1.05);
+  }
 
-.partner {
-  flex: 0 0 calc(25% - 20px);
-  margin: 10px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.partner img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.partner:hover {
-  transform: scale(1.05);
-}
-
-.partner:hover img {
-  transform: scale(1.1);
-}
+  .partner:hover img {
+    transform: scale(1.1);
+  }
 
 
-     .values-list {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .values-list ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .values-list li {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            padding: 15px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            text-align: center;
-        }
-
-
-        /* More CSS */
-
-
-
-
-   </style>
-
+  .values-list {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      text-align: center;
+  }
+  .values-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .values-list li {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      padding: 15px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      text-align: center;
+  }
+  /* More CSS */
+</style>
 
 </head>
 
-
-
 <body>
-
-
-
  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/cresent_logo.jpg" alt="Cresent Logo" style="border-radius: 50%;">
+      <a href="http://localhost/cresent_cloud_solutions/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo
+          The isset page conditional is used to bypass the file path issue generated if the logo is viewed from a page different from the website's entry point (index.php)
+        -->
+        <img src="http://localhost/cresent_cloud_solutions/assets/img/cresent_logo.jpg" alt="Cresent Logo" style="border-radius: 50%;">
         <h1>Crescent</h1>
       </a>
 
-      <!-- .navbar -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="<?=ROOT_URL?>index.php">Home</a></li>
-          <li><a href="<?=ROOT_URL?>about/index.php">About us</a></li>
-          <li><a href="<?=ROOT_URL?>products/index.php">Products</a></li>
-           <li><a href="<?=ROOT_URL?>index.php#services">Services</a></li>
-           <li><a href="<?=ROOT_URL?>blog/index.php">Blog</a></li>
-           <li><a href="<?=ROOT_URL?>contact/index.php">Contact us</a></li>
-        </ul>
-      </nav>
+      <!-- .navbar section -->
+      <div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="<?=ROOT_URL?>index.php">Home</a></li>
+            <li><a href="<?=ROOT_URL?>about/index.php">About us</a></li>
+            <li><a href="<?=ROOT_URL?>products/index.php">Products</a></li>
+             <li><a href="<?=ROOT_URL?>index.php#services">Services</a></li>
+             <li><a href="<?=ROOT_URL?>blog/index.php">Blog</a></li>
+             <li><a href="<?=ROOT_URL?>contact/index.php">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
 
+      <!-- header social icons -->
       <div class="position-relative" style="display: none;">
         <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
         <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
         <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
 
         <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-        <i class="bi bi-list mobile-nav-toggle"></i>
 
         <!-- ======= Search Form ======= -->
-        <div class="search-form-wrap js-search-form-wrap"  style="display: none;">
+        <div class="search-form-wrap js-search-form-wrap">
           <form action="search-result.html" class="search-form">
             <span class="icon bi-search"></span>
             <input type="text" placeholder="Search" class="form-control">
@@ -169,5 +159,5 @@
       </div>
 
     </div>
-
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->

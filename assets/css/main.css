@@ -135,7 +135,7 @@ section {
   font-family: var(--font-primary);
 }
 
-.search-form-wrap {
+/* .search-form-wrap {
   position: absolute;
   right: 0;
   top: 0;
@@ -143,8 +143,8 @@ section {
   transition: 0.3s all ease;
   visibility: hidden;
   opacity: 0;
-}
-.search-form-wrap .search-form {
+} */
+/* .search-form-wrap .search-form {
   position: relative;
 }
 .search-form-wrap .search-form .form-control {
@@ -181,7 +181,7 @@ section {
 .search-form-wrap.active {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 section {
   scroll-margin-top: 70px;
